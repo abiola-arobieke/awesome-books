@@ -3,6 +3,7 @@ const title = document.getElementById('title');
 const author = document.getElementById('author');
 const addBook = document.getElementById('add-book');
 const allBooks = document.getElementById('books');
+let allRemoveBtn;
 
 // Get all stored data and display on browser
 function loadBooks() {
@@ -20,6 +21,20 @@ function loadBooks() {
     eachBooks.innerHTML = bookHTMLTemplate;
     allBooks.appendChild(eachBooks);
   }
+
+  // getAllRemoveBtn();
+  allRemoveBtn = document.querySelectorAll('.remove');
+  allRemoveBtn.forEach((removeBtn) => {
+    removeBtn.addEventListener('click', () => {
+      bookData.forEach((book, index) => {
+        if (index === parseInt(removeBtn.name, 10)) {
+          bookData.splice(index, 1);
+          localStorage.setItem('bookData', JSON.stringify(bookData));
+          loadBooks();
+        }
+      });
+    });
+  });
 }
 
 // Add a book to the bookData array
