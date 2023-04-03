@@ -1,31 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./index.css">
-    <title>Awesome Books</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Awesome Books</title>
+  <link href="index.css" rel="stylesheet">
 </head>
 <body>
-    <section>
-        <h1>Awesome Books</h1>
-        <div id="books">
-        </div>
-        <form action="#">
-            <div>
-                <input id="title" type="text" name="book-title" placeholder="Title">
-            </div>
-            <br>
-            <div>
-                <input id="author" type="text" name="author" placeholder="Author">
-            </div>
-            <br>
-            <div>
-                <button id="add-book" type="submit">Add</button>
-            </div>
-        </form>
-    </section>
-    <script src="./index.js"></script>
+  <header>
+    <nav class="book-list-container">
+      <h3 class="book-list-title">Awesome Books</h3>
+      <div>
+        <a href="#List" id="list-link">List</a>
+        <a href="#AddNew" id="add-link" class="vertical-hr">Add new</a>
+        <a href="#Contact" id="contact-link" class="vertical-hr">Contact</a>
+      </div>
+    </nav>
+    <span id="date-time"></span>
+  </header>
+  <main>
+  <section id="all-books">
+    <h1>All Awesome Books</h1>
+    <ul id="book-list"></ul>
+  </section>
+  <section id="add-book">
+    <form id="add-book-form">
+      <h2>Add a new book</h2>
+      <label for="title-input"></label>
+      <input type="text" id="title-input" name="title" placeholder="Title" required>
+      <label for="author-input"></label>
+      <input type="text" id="author-input" name="author" placeholder="Author" required>
+      <button type="submit" id="add-button">Add</button>
+    </form>
+  </section>
+  <section id="contact-us" class="show">
+    <h1>Contact Information</h1>
+    <p>If you have any questions or you just want to say "Hello", you can reach out to us!</p>
+    <ul>
+      <li>Our e-mail: <a href="mailto:abiola.arobieke@gmail.com" target="_blank">abiola.arobieke@gmail.com</a></li>
+    </ul>
+  </section>
+  </main>
+  <footer>
+    <p>Copyright &copy; 2023 Awesome Books</p>
+  <script src="./index.js"></script>
 </body>
 </html>
