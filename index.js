@@ -1,4 +1,4 @@
-import { DateTime } from './node_modules/luxon/build/es6/luxon.js';
+import { DateTime } from 'luxon.js';
 import BookList from './book.js';
 import hideSectionsOnClick from './spa.js';
 
