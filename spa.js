@@ -1,3 +1,4 @@
+// Hide and show section
 const hideSectionsOnClick = () => {
   const listSection = document.getElementById('all-books');
   const addNewSection = document.getElementById('add-book');
