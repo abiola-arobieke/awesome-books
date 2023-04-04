@@ -59,7 +59,7 @@ hr {
   margin-bottom: 0;
 }
 
-#remove-button {
+.remove-button {
   float: right;
   color: black;
   background-color: white;
