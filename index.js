@@ -1,6 +1,6 @@
-import BookList from './book.js';
-import hideSectionsOnClick from './spa.js';
-import getDateTime from './dateTime.js';
+import BookList from './modules/book.js';
+import hideSectionsOnClick from './modules/spa.js';
+import getDateTime from './modules/dateTime.js';
 
 // global variables
 const bookListElement = document.getElementById('book-list');
