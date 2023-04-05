@@ -93,7 +93,7 @@ on your web browser.
 
 
 - GitHub: [@abiola-arobieke](https://github.com/abiola-arobieke)
-- Linkedin: [abiola-arobieke](https://linkedin.com/in/abiola-arobieke)
+- Linkedin: [@abiola-arobieke](https://linkedin.com/in/abiola-arobieke)
 - Twitter: [@abiola_arobieke](https://twitter.com/abiola_arobieke)
 
 
